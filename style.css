@@ -1,0 +1,183 @@
+body {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.contenedor {
+    margin-top: 100px;
+    
+}
+
+.boton {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: #ff4d6d;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.boton:hover {
+    background-color: #ffe4ec;
+}
+
+.galeria {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    right: 10%;
+}
+.foto {
+    box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+}
+.f1 {
+    top: 120px;
+    left: 150px;
+}
+
+.f3 {
+    top: 100px;
+    left: 50px;
+}
+.f4 {
+    top: 100px;
+    left: 250px;
+}
+.f5 {
+    top: 180px;
+    left: 20px;
+}
+.f6 {
+    top:180px;
+    left: 280px;
+}
+.f7 {
+    top: 260px;
+    left: 90px;
+}
+.f8 {
+    top: 260px;
+    left: 210px;
+}
+.f9 {
+    top: 330px;
+    left: 150px;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.f1 {
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.3s;
+}
+.f3 {
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.8s;
+}
+.f4 {
+    animation: aparecer 1s ease forwards;
+    animation-delay: 1.3s;
+}
+.f6 {
+    animation: aparecer 1s ease forwards;
+    animation-delay: 1.8s;
+}
+.f5 {
+    animation: aparecer 1s ease forwards;
+    animation-delay: 2.3s;
+}
+.f7 {
+    animation: aparecer 1s ease forwards;
+    animation-delay: 2.8s;
+}
+.f8 {
+    animation: aparecer 1s ease forwards;
+    animation-delay: 3.3s;
+}
+.f9 {
+    animation: aparecer 1s ease forwards;
+    animation-delay: 3.8s;
+}
+
+.sola {
+    width: 50%;
+    border-radius: 10px;
+    animation: ap 2s ease forwards;
+}
+@keyframes ap {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.resp {
+    background: black;
+    color: #ffd1dc;
+    font-size: 20px;
+}
+
+.bot {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px;
+}
+
+button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.mensajeEsp {
+    display: flex;
+    margin-top: 100px;
+    margin-right: 40px;
+    opacity: 0;
+    animation: aparecerTexto 2s ease forwards;
+    animation-delay: 3.9s;
+}
+@keyframes aparecerTexto {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#tiempo {
+    font-family: 'Arial', sans-serif;
+}
